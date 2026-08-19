@@ -166,34 +166,34 @@
 
       <div class="n8n-panel reveal">
         <div class="n8n-check">
-          <p class="n8n-check__tag">&gt; ЧТО ДАЁТ АВТОМАТИЗАЦИЯ НА N8N</p>
+          <p class="n8n-check__tag">&gt; РЕАЛЬНЫЙ ВОРКФЛОУ, НЕ МОКАП</p>
           <ul class="check-list">
             <li class="check-item">
               <span class="check-mark">✓</span>
               <div>
-                <h3>Ноль ручного ввода</h3>
-                <p>Заявка сама доходит от чата до карточки в CRM — без копипаста между системами.</p>
+                <h3>Webhook принимает запрос</h3>
+                <p>Дальше всё происходит без участия человека — от входящего сообщения до ответа.</p>
               </div>
             </li>
             <li class="check-item">
               <span class="check-mark">✓</span>
               <div>
-                <h3>Ни одной потерянной заявки</h3>
-                <p>Каждый лид попадает в воронку автоматически, дубли схлопываются сами.</p>
+                <h3>AI обрабатывает и отвечает</h3>
+                <p>Модель формирует ответ и с доступом к инструментам сама решает, что сделать дальше.</p>
               </div>
             </li>
             <li class="check-item">
               <span class="check-mark">✓</span>
               <div>
-                <h3>Растёт вместе с нагрузкой</h3>
-                <p>Один и тот же сценарий держит и 10, и 500 заявок в день — без переделки.</p>
+                <h3>Ответ уходит в Telegram</h3>
+                <p>Сообщение доставляется адресату сразу, без задержек и ручной пересылки.</p>
               </div>
             </li>
             <li class="check-item">
               <span class="check-mark">✓</span>
               <div>
-                <h3>Никакого чёрного ящика</h3>
-                <p>Каждый шаг сценария виден и логируется — понятно, что и почему произошло.</p>
+                <h3>Запись фиксируется в Notion</h3>
+                <p>Каждое обращение попадает страницей в базу — история никогда не теряется.</p>
               </div>
             </li>
           </ul>
@@ -202,27 +202,27 @@
         <div class="window n8n-code">
           <div class="window-bar">
             <span class="window-dot wd-r"></span><span class="window-dot wd-y"></span><span class="window-dot wd-g"></span>
-            <span class="window-path">workflow.n8n</span>
+            <span class="window-path">webhook-to-notion.n8n</span>
           </div>
-          <pre class="code-body"><span class="ln">01</span><span class="ck">workflow</span> <span class="cs">"lead-intake"</span> {
+          <pre class="code-body"><span class="ln">01</span><span class="ck">workflow</span> <span class="cs">"webhook-to-notion"</span> {
 <span class="ln">02</span>
-<span class="ln">03</span>  <span class="ck">trigger</span>: webhook(<span class="cs">"/new-lead"</span>)
+<span class="ln">03</span>  <span class="ck">trigger</span>: webhook(<span class="cs">"POST"</span>)
 <span class="ln">04</span>
-<span class="ln">05</span>  <span class="ck">step</span> qualify {
-<span class="ln">06</span>    model: <span class="cs">"claude-3.5"</span>
-<span class="ln">07</span>    output: score, intent
+<span class="ln">05</span>  <span class="ck">step</span> ai.message {
+<span class="ln">06</span>    model: <span class="cs">"message a model"</span>
+<span class="ln">07</span>    tools: <span class="cb">true</span>
 <span class="ln">08</span>  }
 <span class="ln">09</span>
-<span class="ln">10</span>  <span class="ck">step</span> crm.upsert {
-<span class="ln">11</span>    match: email
-<span class="ln">12</span>    dedupe: <span class="cb">true</span>
-<span class="ln">13</span>  }
-<span class="ln">14</span>
-<span class="ln">15</span>  <span class="ck">step</span> notify {
-<span class="ln">16</span>    channel: telegram
-<span class="ln">17</span>  }
+<span class="ln">10</span>  <span class="ck">step</span> telegram.send {
+<span class="ln">11</span>    text: message
+<span class="ln">12</span>  }
+<span class="ln">13</span>
+<span class="ln">14</span>  <span class="ck">step</span> notion.create {
+<span class="ln">15</span>    target: databasePage
+<span class="ln">16</span>  }
+<span class="ln">17</span>
 <span class="ln">18</span>}
-<span class="ln">19</span><span class="cm">// avg run time: 1.8s</span><span class="code-cursor"></span></pre>
+<span class="ln">19</span><span class="cm">// реальный сценарий, не мокап</span><span class="code-cursor"></span></pre>
         </div>
       </div>
     </div>

@@ -274,15 +274,16 @@ a { color: inherit; text-decoration: none; }
 
 .project:hover { border-color: var(--proj-accent); box-shadow: 0 0 0 1px var(--proj-accent), 0 0 28px -6px var(--proj-accent); }
 
-.window { display: block; }
+.window { display: block; min-width: 0; }
 .window-bar {
-  display: flex; align-items: center; gap: 0.5rem;
+  display: flex; align-items: center; gap: 0.5rem; min-width: 0;
   padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--border); background: var(--muted);
 }
-.window-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; }
+.window-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; flex-shrink: 0; }
 .wd-r { background: #ff5f56; } .wd-y { background: #ffbd2e; } .wd-g { background: #27c93f; }
 .window-path {
   margin-left: 0.4rem; font-family: var(--font-label); font-size: 0.74rem; color: var(--muted-fg);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0;
 }
 
 .window-media { aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
