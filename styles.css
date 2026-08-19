@@ -113,7 +113,7 @@ a { color: inherit; text-decoration: none; }
 .title {
   font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
   font-size: clamp(2.1rem, 6vw, 4.2rem); line-height: 1.08; letter-spacing: 0.01em;
-  margin-bottom: 1.5rem; max-width: 18ch; color: var(--foreground);
+  margin-bottom: 1.5rem; max-width: 26ch; color: var(--foreground);
 }
 .glitch-text {
   background-image: linear-gradient(
