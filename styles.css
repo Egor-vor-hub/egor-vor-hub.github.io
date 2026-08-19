@@ -116,6 +116,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(2.1rem, 6vw, 4.2rem); line-height: 1.08; letter-spacing: 0.01em;
   margin-bottom: 1.5rem; max-width: 26ch; color: var(--foreground);
 }
+.title-line { display: block; }
 
 .hero-tags { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 2rem; }
 .hero-tag {
@@ -426,19 +427,43 @@ a { color: inherit; text-decoration: none; }
 .contact-card::before { top: -0.6rem; left: -0.6rem; border-right: none; border-bottom: none; }
 .contact-card::after { bottom: -0.6rem; right: -0.6rem; border-left: none; border-top: none; }
 
+.contact-card__avatar {
+  width: 4.5rem; height: 4.5rem; border-radius: 50%;
+  display: grid; place-items: center; margin: 0 auto 1.6rem;
+  background: var(--card); border: 1.5px solid var(--accent-3);
+  box-shadow: 0 0 14px -2px rgba(0, 212, 255, 0.5);
+  font-family: var(--font-display); font-weight: 400; font-size: 1.3rem;
+  letter-spacing: 0.02em; color: var(--accent-3); text-shadow: 0 0 6px rgba(0, 212, 255, 0.4);
+}
 .contact-card .eyebrow { display: flex; justify-content: center; }
 .contact-card .section-heading { max-width: 34ch; margin: 0 auto 1rem; }
 .contact-card__sub {
   font-family: var(--font-label); font-size: 0.86rem; color: var(--muted-fg);
+  letter-spacing: 0.02em; margin-bottom: 0.8rem;
+}
+.contact-card__sla {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  font-family: var(--font-label); font-size: 0.8rem; color: var(--muted-fg);
   letter-spacing: 0.02em; margin-bottom: 2rem;
 }
 .contact-card__actions {
   display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem;
 }
 
+/* -- project concept badge -- */
+.project-tag-row { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.6rem; }
+.project-tag-row .project-tag { margin-bottom: 0; }
+.project-badge {
+  font-family: var(--font-label); font-size: 0.62rem; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 0.2rem 0.55rem;
+  border: 1px solid var(--proj-accent); color: var(--proj-accent);
+}
+
 @media (max-width: 760px) {
   .timeline { grid-template-columns: repeat(2, 1fr); }
   .timeline::before { display: none; }
+  .timeline-step:last-child { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; text-align: center; }
+  .timeline-step:last-child .timeline-dot { left: 50%; transform: translateX(-50%); }
 }
 
 /* ---------- footer ---------- */

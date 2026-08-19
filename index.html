@@ -31,7 +31,7 @@
 
   <section class="hero">
     <p class="eyebrow">&gt; РАЗРАБОТКА САЙТОВ // UX // N8N<span class="blink-cursor">_</span></p>
-    <h1 class="title glitch-text">СТРОЮ РАБОЧИЕ<br>AI- И ВЕБ-СИСТЕМЫ</h1>
+    <h1 class="title glitch-text"><span class="title-line">СТРОЮ РАБОЧИЕ</span><span class="title-line">AI- И ВЕБ-СИСТЕМЫ</span></h1>
 
     <div class="hero-tags">
       <span class="hero-tag ht-1">UX</span>
@@ -61,7 +61,7 @@
 
     <div class="group">
       <div class="group-head reveal">
-        <p class="group-tag">&gt; ПРОЕКТЫ</p>
+        <h2 class="group-tag">&gt; ПРОЕКТЫ</h2>
         <p class="group-desc">Сайты и AI-автоматизация — то, что уже собрано и работает, не концепты на бумаге.</p>
       </div>
       <div class="group-grid group-grid--quad">
@@ -73,12 +73,12 @@
               <span class="window-path">~/nodex</span>
             </div>
             <div class="window-media">
-              <img src="photos/nodex-hero.png" alt="" loading="lazy">
+              <img src="photos/nodex-hero.png" alt="3D-рендер робота-агента NODEX — светящийся ИИ-мозг под тёмным визором" loading="lazy">
             </div>
           </a>
           <div class="project-body">
             <p class="project-tag">&gt; ЛИДЫ И CRM</p>
-            <h2 class="project-name">NODEX</h2>
+            <h3 class="project-name">NODEX</h3>
             <p class="project-desc">
               Студия AI-интеграции: агенты на Claude и n8n отвечают лиду за 3 секунды,
               квалифицируют заявку и сами обновляют сделку в CRM — без найма новых людей.
@@ -114,8 +114,11 @@
             </div>
           </a>
           <div class="project-body">
-            <p class="project-tag">&gt; AI / ТРЕЙДИНГ</p>
-            <h2 class="project-name">QUANT</h2>
+            <div class="project-tag-row">
+              <p class="project-tag">&gt; AI / ТРЕЙДИНГ</p>
+              <span class="project-badge chamfer-sm">КОНЦЕПТ</span>
+            </div>
+            <h3 class="project-name">QUANT</h3>
             <p class="project-desc">
               Концепт автономного торгового AI-агента: анализ рынка, исполнение сделок
               и управление риском без участия человека.
@@ -140,8 +143,11 @@
             </div>
           </a>
           <div class="project-body">
-            <p class="project-tag">&gt; SECURITY</p>
-            <h2 class="project-name">REDSHELL.SH</h2>
+            <div class="project-tag-row">
+              <p class="project-tag">&gt; SECURITY</p>
+              <span class="project-badge chamfer-sm">КОНЦЕПТ</span>
+            </div>
+            <h3 class="project-name">REDSHELL.SH</h3>
             <p class="project-desc">
               Продукт-концепт для проверки сайтов на уязвимости: инъекции, битая авторизация,
               утечки секретов — с интерактивной демонстрацией скана прямо на странице.
@@ -157,12 +163,12 @@
               <span class="window-path">~/karatel</span>
             </div>
             <div class="window-media">
-              <img src="photos/karatel-hero.jpg" alt="" loading="lazy">
+              <img src="photos/karatel-hero.jpg" alt="Студийное фото кастомной сборки — карабин в песочном камуфляже с оптическим прицелом и глушителем" loading="lazy">
             </div>
           </a>
           <div class="project-body">
             <p class="project-tag">&gt; ВИТРИНА / КАСТОМ</p>
-            <h2 class="project-name">KARATEL</h2>
+            <h3 class="project-name">KARATEL</h3>
             <p class="project-desc">
               Интерактивная витрина одной сборки: осмотр со всех сторон драгом и кликом,
               техническая спецификация, детальные кадры и видео.
@@ -175,7 +181,7 @@
 
       <div class="n8n-panel reveal">
         <div class="n8n-check">
-          <p class="n8n-check__tag">&gt; РЕАЛЬНЫЙ ВОРКФЛОУ, НЕ МОКАП</p>
+          <h3 class="n8n-check__tag">&gt; РЕАЛЬНЫЙ ВОРКФЛОУ, НЕ МОКАП</h3>
           <ul class="check-list">
             <li class="check-item">
               <span class="check-mark">✓</span>
@@ -218,7 +224,7 @@
 <span class="ln">03</span>  <span class="ck">trigger</span>: webhook(<span class="cs">"POST"</span>)
 <span class="ln">04</span>
 <span class="ln">05</span>  <span class="ck">step</span> ai.message {
-<span class="ln">06</span>    model: <span class="cs">"message a model"</span>
+<span class="ln">06</span>    model: <span class="cs">"claude-sonnet-4-5"</span>
 <span class="ln">07</span>    tools: <span class="cb">true</span>
 <span class="ln">08</span>  }
 <span class="ln">09</span>
@@ -274,12 +280,14 @@
     </div>
 
     <div class="contact-card reveal">
+      <div class="contact-card__avatar" aria-hidden="true">ЕА</div>
       <p class="eyebrow">&gt; ОСНОВАТЕЛЬ</p>
       <h2 class="section-heading">Хватит терять время на рутину. Давайте обсудим вашу задачу.</h2>
       <p class="contact-card__sub">Егор Анищенко — основатель SYNAPSE LABS</p>
+      <p class="contact-card__sla"><span class="status-dot"></span> Отвечаю в течение 24 часов</p>
 
       <div class="contact-card__actions">
-        <a class="btn-cyber" href="https://t.me/username">Telegram</a>
+        <a class="btn-cyber" href="https://t.me/doctor_cot" target="_blank" rel="noopener noreferrer">Telegram</a>
         <a class="btn-cyber" href="https://github.com/Egor-vor-hub" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="btn-cyber" href="mailto:milikidze.geoi@gmail.com">Email</a>
       </div>
