@@ -137,6 +137,34 @@ a { color: inherit; text-decoration: none; }
 .mt-warn { color: #ffb000; }
 .mt-fail { color: #ff3333; }
 
+/* ---------- quant ticker mock ---------- */
+.mock-quant {
+  width: 100%; height: 100%; background: #07080a;
+  display: flex; flex-direction: column; justify-content: center; gap: 0.9rem;
+  padding: 1.2rem 1.4rem;
+}
+.mock-quant__row { display: flex; justify-content: space-between; align-items: baseline; }
+.mock-quant__pair {
+  font-family: var(--font-mono); font-size: 0.82rem; color: #868d97;
+}
+.mock-quant__price {
+  font-family: var(--font-mono); font-size: 0.92rem; font-weight: 500;
+}
+.mock-quant__price small { font-size: 0.72rem; opacity: 0.85; margin-left: 0.3rem; }
+.mq-gain { color: #35e7a3; }
+.mq-loss { color: #ff5c72; }
+.mock-quant__bars {
+  display: flex; align-items: flex-end; gap: 0.35rem; height: 3.2rem; margin-top: 0.4rem;
+}
+.mock-quant__bars span {
+  flex: 1; background: #35e7a3; border-radius: 1px;
+}
+.mock-quant__bars span.mq-loss-bar { background: #ff5c72; }
+.mq-h1 { height: 38%; } .mq-h2 { height: 54%; } .mq-h3 { height: 30%; }
+.mq-h4 { height: 66%; } .mq-h5 { height: 48%; } .mq-h6 { height: 74%; }
+.mq-h7 { height: 58%; } .mq-h8 { height: 82%; } .mq-h9 { height: 40%; }
+.mq-h10 { height: 70%; }
+
 /* ---------- footer ---------- */
 .site-footer {
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
