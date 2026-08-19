@@ -12,24 +12,27 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<div class="fx-grid" aria-hidden="true"></div>
+<div class="fx-scanlines" aria-hidden="true"></div>
+
 <a class="skip-link" href="#main">К содержимому</a>
 
 <header class="masthead">
-  <span class="brand">Егор</span>
-  <a class="brand-note" href="#projects">AI-автоматизация &middot; Security &middot; Веб-разработка</a>
+  <span class="brand">ЕГОР<span class="brand-cursor">_</span></span>
+  <a class="brand-note" href="#projects">&gt; AI-АВТОМАТИЗАЦИЯ // SECURITY // ВЕБ-РАЗРАБОТКА</a>
 </header>
 
 <main id="main">
 
   <section class="hero">
-    <p class="eyebrow">ПОРТФОЛИО</p>
-    <h1 class="title">Строю рабочие<br>AI- и веб-системы</h1>
+    <p class="eyebrow">&gt; ЗАГРУЗКА_ПРОФИЛЯ<span class="blink-cursor">_</span></p>
+    <h1 class="title glitch-text">СТРОЮ РАБОЧИЕ<br>AI- И ВЕБ-СИСТЕМЫ</h1>
     <p class="lede">
       Внедряю AI-агентов для автоматизации бизнеса и делаю security-инструменты —
       от идеи до работающего прототипа. Ниже — примеры того, что уже собрано.
@@ -39,25 +42,34 @@
   <section class="projects" id="projects">
 
     <article class="project project--nodex">
-      <a class="project-media" href="https://egor-vor-hub.github.io/nodex/" target="_blank" rel="noopener noreferrer">
-        <img src="photos/nodex-hero.png" alt="" loading="lazy">
+      <a class="window" href="https://egor-vor-hub.github.io/nodex/" target="_blank" rel="noopener noreferrer">
+        <div class="window-bar">
+          <span class="window-dot wd-r"></span><span class="window-dot wd-y"></span><span class="window-dot wd-g"></span>
+          <span class="window-path">~/nodex</span>
+        </div>
+        <div class="window-media">
+          <img src="photos/nodex-hero.png" alt="" loading="lazy">
+        </div>
       </a>
       <div class="project-body">
-        <p class="project-tag">AI-АВТОМАТИЗАЦИЯ</p>
+        <p class="project-tag">&gt; AI-АВТОМАТИЗАЦИЯ</p>
         <h2 class="project-name">NODEX</h2>
         <p class="project-desc">
           Студия AI-интеграции: агенты на Claude и n8n отвечают лиду за 3 секунды,
           квалифицируют заявку и сами обновляют сделку в CRM — без найма новых людей.
         </p>
-        <a class="project-link" href="https://egor-vor-hub.github.io/nodex/" target="_blank" rel="noopener noreferrer">Открыть сайт →</a>
+        <a class="btn-cyber" href="https://egor-vor-hub.github.io/nodex/" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ_САЙТ →</a>
       </div>
     </article>
 
     <article class="project project--redshell">
-      <a class="project-media project-media--mock" href="https://egor-vor-hub.github.io/redshell/" target="_blank" rel="noopener noreferrer">
-        <div class="mock-terminal">
-          <div class="mock-terminal__bar"><span></span><span></span><span></span></div>
-          <div class="mock-terminal__body">
+      <a class="window" href="https://egor-vor-hub.github.io/redshell/" target="_blank" rel="noopener noreferrer">
+        <div class="window-bar">
+          <span class="window-dot wd-r"></span><span class="window-dot wd-y"></span><span class="window-dot wd-g"></span>
+          <span class="window-path">~/redshell.sh</span>
+        </div>
+        <div class="window-media">
+          <div class="mock-terminal">
             <span class="mt-ok">[OK]</span> port scan complete<br>
             <span class="mt-warn">[WARN]</span> outdated TLS 1.0<br>
             <span class="mt-fail">[FAIL]</span> SQL injection vector<br>
@@ -66,59 +78,71 @@
         </div>
       </a>
       <div class="project-body">
-        <p class="project-tag">SECURITY</p>
+        <p class="project-tag">&gt; SECURITY</p>
         <h2 class="project-name">REDSHELL.SH</h2>
         <p class="project-desc">
           Продукт-концепт для проверки сайтов на уязвимости: инъекции, битая авторизация,
           утечки секретов — с интерактивной демонстрацией скана прямо на странице.
         </p>
-        <a class="project-link" href="https://egor-vor-hub.github.io/redshell/" target="_blank" rel="noopener noreferrer">Открыть сайт →</a>
+        <a class="btn-cyber" href="https://egor-vor-hub.github.io/redshell/" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ_САЙТ →</a>
       </div>
     </article>
 
     <article class="project project--karatel">
-      <a class="project-media" href="https://egor-vor-hub.github.io/karatel/" target="_blank" rel="noopener noreferrer">
-        <img src="photos/karatel-hero.jpg" alt="" loading="lazy">
+      <a class="window" href="https://egor-vor-hub.github.io/karatel/" target="_blank" rel="noopener noreferrer">
+        <div class="window-bar">
+          <span class="window-dot wd-r"></span><span class="window-dot wd-y"></span><span class="window-dot wd-g"></span>
+          <span class="window-path">~/karatel</span>
+        </div>
+        <div class="window-media">
+          <img src="photos/karatel-hero.jpg" alt="" loading="lazy">
+        </div>
       </a>
       <div class="project-body">
-        <p class="project-tag">ВИТРИНА / КАСТОМ</p>
+        <p class="project-tag">&gt; ВИТРИНА / КАСТОМ</p>
         <h2 class="project-name">KARATEL</h2>
         <p class="project-desc">
           Интерактивная витрина одной сборки: осмотр со всех сторон драгом и кликом,
           техническая спецификация, детальные кадры и видео.
         </p>
-        <a class="project-link" href="https://egor-vor-hub.github.io/karatel/" target="_blank" rel="noopener noreferrer">Открыть сайт →</a>
+        <a class="btn-cyber" href="https://egor-vor-hub.github.io/karatel/" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ_САЙТ →</a>
       </div>
     </article>
 
     <article class="project project--quant">
-      <a class="project-media project-media--mock" href="https://egor-vor-hub.github.io/quant/" target="_blank" rel="noopener noreferrer">
-        <div class="mock-quant">
-          <div class="mock-quant__row">
-            <span class="mock-quant__pair">BTC/USD</span>
-            <span class="mock-quant__price mq-gain">42 918.30 <small>+1.84%</small></span>
-          </div>
-          <div class="mock-quant__row">
-            <span class="mock-quant__pair">ETH/USD</span>
-            <span class="mock-quant__price mq-loss">2 304.11 <small>−0.62%</small></span>
-          </div>
-          <div class="mock-quant__bars" aria-hidden="true">
-            <span class="mq-h1"></span><span class="mq-h2"></span>
-            <span class="mq-h3 mq-loss-bar"></span><span class="mq-h4"></span>
-            <span class="mq-h5 mq-loss-bar"></span><span class="mq-h6"></span>
-            <span class="mq-h7"></span><span class="mq-h8"></span>
-            <span class="mq-h9 mq-loss-bar"></span><span class="mq-h10"></span>
+      <a class="window" href="https://egor-vor-hub.github.io/quant/" target="_blank" rel="noopener noreferrer">
+        <div class="window-bar">
+          <span class="window-dot wd-r"></span><span class="window-dot wd-y"></span><span class="window-dot wd-g"></span>
+          <span class="window-path">~/quant</span>
+        </div>
+        <div class="window-media">
+          <div class="mock-quant">
+            <div class="mock-quant__row">
+              <span class="mock-quant__pair">BTC/USD</span>
+              <span class="mock-quant__price mq-gain">42 918.30 <small>+1.84%</small></span>
+            </div>
+            <div class="mock-quant__row">
+              <span class="mock-quant__pair">ETH/USD</span>
+              <span class="mock-quant__price mq-loss">2 304.11 <small>−0.62%</small></span>
+            </div>
+            <div class="mock-quant__bars" aria-hidden="true">
+              <span class="mq-h1"></span><span class="mq-h2"></span>
+              <span class="mq-h3 mq-loss-bar"></span><span class="mq-h4"></span>
+              <span class="mq-h5 mq-loss-bar"></span><span class="mq-h6"></span>
+              <span class="mq-h7"></span><span class="mq-h8"></span>
+              <span class="mq-h9 mq-loss-bar"></span><span class="mq-h10"></span>
+            </div>
           </div>
         </div>
       </a>
       <div class="project-body">
-        <p class="project-tag">AI / ТРЕЙДИНГ</p>
+        <p class="project-tag">&gt; AI / ТРЕЙДИНГ</p>
         <h2 class="project-name">QUANT</h2>
         <p class="project-desc">
           Концепт автономного торгового AI-агента: анализ рынка, исполнение сделок
           и управление риском без участия человека.
         </p>
-        <a class="project-link" href="https://egor-vor-hub.github.io/quant/" target="_blank" rel="noopener noreferrer">Открыть сайт →</a>
+        <a class="btn-cyber" href="https://egor-vor-hub.github.io/quant/" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ_САЙТ →</a>
       </div>
     </article>
 
@@ -127,8 +151,8 @@
 </main>
 
 <footer class="site-footer">
-  <span class="brand small">Егор</span>
-  <p class="footer-note">Портфолио для клиентов &middot; 2026</p>
+  <span class="brand small">ЕГОР_</span>
+  <p class="footer-note">&gt; STATUS: ONLINE // ПОРТФОЛИО ДЛЯ КЛИЕНТОВ // 2026</p>
 </footer>
 
 </body>
