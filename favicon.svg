@@ -1,4 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#0b0b0d"/>
-  <text x="6" y="23" font-family="ui-sans-serif, sans-serif" font-size="18" font-weight="800" fill="#f4f2ee">E</text>
+  <rect width="32" height="32" rx="7" fill="#09090b"/>
+  <g stroke="#5b93ff" stroke-width="1.4" fill="none" opacity="0.9">
+    <line x1="10" y1="21" x2="16" y2="9"/>
+    <line x1="16" y1="9" x2="23" y2="19"/>
+    <line x1="10" y1="21" x2="23" y2="19"/>
+  </g>
+  <circle cx="10" cy="21" r="2.4" fill="#2e6fff"/>
+  <circle cx="16" cy="9" r="2.4" fill="#5b93ff"/>
+  <circle cx="23" cy="19" r="2.4" fill="#2e6fff"/>
 </svg>
